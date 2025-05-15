@@ -1,59 +1,75 @@
-# AngularExample
+# Angular 示例项目
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+基于 Angular 19 的示例项目，集成现代前端开发工具链。
 
-## Development server
+## 功能特性
 
-To start a local development server, run:
+- ✅ Angular 19 最新特性
+- 🚀 内置 UnoCSS 原子化 CSS 引擎
+- 🔧 集成 ESLint + Prettier 代码规范
+- 🔒 Husky + Commitlint Git 提交规范
+- 📦 优化后的 npm scripts 工作流
+- 📈 自动化版本发布配置
 
+## 快速开始
+
+### 环境要求
+- Node.js 18+
+- pnpm/npm/yarn
+
+### 安装依赖
 ```bash
-ng serve
+pnpm install
+# 或
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+### 开发模式
 ```bash
-ng generate component component-name
+pnpm dev
+# 同时运行：
+# - UnoCSS 样式监听
+# - Angular 开发服务器
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 常用命令
+| 命令              | 说明                  |
+|-------------------|---------------------|
+| `pnpm build`      | 生产环境构建           |
+| `pnpm test`       | 运行单元测试           |
+| `pnpm lint`       | 代码规范检查           |
+| `pnpm lint:fix`   | 自动修复代码规范问题    |
 
+## 技术栈
+
+### 核心框架
+- Angular 19
+- TypeScript 5.7
+- RxJS 7.8
+
+### 开发工具
+- [UnoCSS](https://unocss.dev/) - 原子化 CSS 引擎
+- [ESLint](https://eslint.org/) - 代码质量检查
+- [Prettier](https://prettier.io/) - 代码格式化
+- [Husky](https://typicode.github.io/husky/) - Git 钩子管理
+- [Commitlint](https://commitlint.js.org/) - 提交信息规范
+
+## 项目配置
+
+### Git 提交规范
+使用 Conventional Commits 规范：
+
+### 版本发布
+内置 [release-it](https://github.com/release-it/release-it) 配置：
 ```bash
-ng generate --help
+pnpm release-patch
 ```
 
-## Building
-
-To build the project run:
-
+## 贡献指南
+1. 安装 husky 钩子：
 ```bash
-ng build
+pnpm prepare
 ```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+2. 提交前会自动执行：
+- 代码规范检查 (ESLint)
+- 代码格式化 (Prettier)
