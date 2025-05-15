@@ -1,1 +1,1 @@
-npx prettier . --write && pnpm lint:fix && npx --no -- lint-staged
+npx --no -- lint-staged

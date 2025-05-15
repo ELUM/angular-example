@@ -11,6 +11,9 @@ build:
     pnpm build:css
     pnpm build
 
+lint:
+    pnpm lint:fix && npx prettier . --write
+
 release-patch:
     release-it -i patch
  
