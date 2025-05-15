@@ -14,10 +14,12 @@
 ## 快速开始
 
 ### 环境要求
+
 - Node.js 18+
 - pnpm/npm/yarn
 
 ### 安装依赖
+
 ```bash
 pnpm install
 # 或
@@ -25,6 +27,7 @@ npm install
 ```
 
 ### 开发模式
+
 ```bash
 pnpm dev
 # 同时运行：
@@ -33,6 +36,7 @@ pnpm dev
 ```
 
 ### 常用命令
+
 | 命令              | 说明                  |
 |-------------------|---------------------|
 | `pnpm build`      | 生产环境构建           |
@@ -43,33 +47,43 @@ pnpm dev
 ## 技术栈
 
 ### 核心框架
+
 - Angular 19
 - TypeScript 5.7
 - RxJS 7.8
 
 ### 开发工具
+
 - [UnoCSS](https://unocss.dev/) - 原子化 CSS 引擎
 - [ESLint](https://eslint.org/) - 代码质量检查
 - [Prettier](https://prettier.io/) - 代码格式化
 - [Husky](https://typicode.github.io/husky/) - Git 钩子管理
 - [Commitlint](https://commitlint.js.org/) - 提交信息规范
+- [Gitcz](https://github.com/streamich/git-cz) - commit 规范工具
 
 ## 项目配置
 
 ### Git 提交规范
+
 使用 Conventional Commits 规范：
 
 ### 版本发布
+
 内置 [release-it](https://github.com/release-it/release-it) 配置：
+
 ```bash
 pnpm release-patch
 ```
 
 ## 贡献指南
+
 1. 安装 husky 钩子：
+
 ```bash
 pnpm prepare
 ```
+
 2. 提交前会自动执行：
+
 - 代码规范检查 (ESLint)
 - 代码格式化 (Prettier)
