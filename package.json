@@ -13,7 +13,8 @@
     "build:css": "unocss",
     "prepare": "husky install",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "prettier": "npx prettier . --write"
   },
   "dependencies": {
     "@angular/common": "^19.2.0",

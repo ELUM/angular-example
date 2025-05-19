@@ -86,4 +86,3 @@ pnpm prepare
 2. 提交前会自动执行：
 
 - 代码规范检查 (ESLint)
-- 代码格式化 (Prettier)
